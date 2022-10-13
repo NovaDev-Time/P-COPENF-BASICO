@@ -631,11 +631,19 @@ section {
 --------------------------------------------------------------*/
 .counts {
   padding: 60px 0;
+  background-color: rgba(0,0, 0,0.5);
+  color: #fff;
+  
 }
 
+.counts h2{
+  font-size: 1.5rem;
+  color: #fff;
+}
 .counts .count-box {
   width: 100%;
   text-align: center;
+  
 }
 
 .counts .count-box span {
@@ -643,7 +651,7 @@ section {
   line-height: 48px;
   display: block;
   font-weight: 700;
-  color: #124265;
+  color: rgb(5, 78, 5);
   margin-left: 80px;
   margin: auto;
 }
@@ -651,9 +659,9 @@ section {
 .counts .count-box p {
   padding: 8px 0 0 0;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #1e6ca6;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1561,6 +1569,11 @@ section {
 
 .faq .faq-list a.collapsed .icon-close {
   display: none;
+}
+
+
+.sliderContainer{
+  height: 45vh;
 }
 
 @media (max-width: 1200px) {
