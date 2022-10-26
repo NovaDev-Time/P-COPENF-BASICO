@@ -1,0 +1,37 @@
+# name: Laravel-Deploy Frontend
+
+# on:
+#   push:
+#     branches: [ develop-front ]
+#   pull_request:
+#     branches: [ develop-front ]
+
+# jobs:
+#   laravel-tests:
+
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+#       with:
+#         php-version: '7.4'
+#     - uses: actions/checkout@v2
+#     - name: Copy .env
+#       run: php -r "file_exists('.env-production') || copy('.env-production', '.env');"
+#     - name: Install Dependencies
+#       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+#     - name: Generate key
+#       run: php artisan key:generate
+#     - name: Directory Permissions
+#       run: chmod -R 777 storage bootstrap/cache     
+#     - name: Started sync all 🎁 files
+#       uses: SamKirkland/FTP-Deploy-Action@4.0.0
+#       with:
+#          server: ftp.novadev.org
+#          username: inscricao@inscricao.copenfl.novadev.org
+#          password: ARAt!33%tmNL
+#          server-dir: /public_html/inscricao.copenfl/
+#          exclude: |
+#                 **/.git*
+#                 **/.git*/**
+#                 **/node_modules/**
