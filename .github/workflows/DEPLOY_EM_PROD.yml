@@ -25,7 +25,7 @@
 #     - name: Directory Permissions
 #       run: chmod -R 777 storage bootstrap/cache     
 #     - name: Started sync all 🎁 files
-#       uses: SamKirkland/FTP-Deploy-Action@4.0.0
+#       uses: SamKirkland/FTP-Deploy-Action@4.3.2
 #       with:
 #          server: ftp.novadev.org
 #          username: inscricao@inscricao.copenfl.novadev.org
